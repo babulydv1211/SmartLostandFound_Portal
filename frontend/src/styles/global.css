@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --slf-background: 245 247 250;
+  --slf-surface: 255 255 255;
+  --slf-primary: 35 123 98;
+  --slf-accent: 242 159 70;
+  --slf-foreground: 30 41 55;
+  --slf-muted: 130 145 162;
+  --font-display: "Plus Jakarta Sans";
+  --font-body: "DM Sans";
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(35, 123, 98, 0.45) rgba(245, 247, 250, 0.6);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--slf-background));
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(35, 123, 98, 0.45);
+  border-radius: 9999px;
+}
+
+body {
+  background: rgb(var(--slf-background));
+}
+
+.glass-card {
+  backdrop-filter: blur(18px);
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 45px -25px rgba(28, 37, 52, 0.35);
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
