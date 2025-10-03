@@ -27,9 +27,9 @@
 # next-env.d.ts
 
 # dependencies
-/node_modules/
+node_modules/
 
-# Next.js build output
+# Next.js / build outputs
 /.next/
 /out/
 /build/
@@ -40,7 +40,7 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# environment variables
+# env files
 .env
 .env.local
 .env.development.local
@@ -54,6 +54,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Optional: editor directories
+# editor directories
 .vscode/
 .idea/
