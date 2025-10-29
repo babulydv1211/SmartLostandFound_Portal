@@ -427,17 +427,17 @@ function LostItemForm({ onSuccess }: LostItemFormProps) {
               <Upload className="text-purple-400" size={24} />
               <h3 className="font-display text-2xl font-bold text-white">Report Lost Item</h3>
             </motion.div>
-            <p className="text-lg text-gray-300 max-w-md">
+            <p className="text-lg text-gray-300 max-w-md py-4">
               Share details so our AI and community can help you find your belongings.
             </p>
           </div>
-          <motion.span 
+          {/* <motion.span 
             whileHover={{ scale: 1.05 }}
             className="rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/40 px-4 py-2 text-sm font-semibold text-purple-300 shadow-lg flex items-center gap-2"
           >
             <User size={16} />
             {user?.name ?? "Student"}
-          </motion.span>
+          </motion.span> */}
         </div>
         
         {/* Form Fields */}

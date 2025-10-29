@@ -1,7 +1,8 @@
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
-_model = SentenceTransformer("all-MiniLM-L6-v2")
+#load model
+_model = SentenceTransformer("all-MiniLM-L6-v2")  #Minimalistic Language Model
 
 def compute_text_similarity(description_a: str, description_b: str, location_a: str, location_b: str) -> float:
     texts = [

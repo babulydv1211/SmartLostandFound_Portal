@@ -12,6 +12,8 @@ app = FastAPI(
     description="Performs multimodal similarity between lost and found reports."
 )
 
+#basemodel pydentic define req,res schemas
+#itemspaload api per data send ke ye str hona chaiye
 class ItemPayload(BaseModel):
     id: Optional[str]
     title: str
@@ -20,6 +22,7 @@ class ItemPayload(BaseModel):
     occurredAt: str
     image: Optional[str] = None
 
+#match req,lost and found item use basemodel
 class MatchRequest(BaseModel):
     lost_item: ItemPayload
     found_item: ItemPayload

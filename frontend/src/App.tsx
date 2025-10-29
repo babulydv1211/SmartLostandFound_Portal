@@ -7,6 +7,7 @@ import DashboardPage from "./pages/DashboardPage"
 import RootLayout from "./layouts/RootLayout"
 import ProtectedRoute from "./components/auth/ProtectedRoute"
 
+
 function App() {
   return (
     <Routes>
@@ -16,7 +17,6 @@ function App() {
         <Route path="/signup" element={<SignupPage />} /> */}
         <Route path="/login" element={<AuthPage />} />
        <Route path="/signup" element={<AuthPage />} />
-
         <Route
           path="/dashboard"
           element={

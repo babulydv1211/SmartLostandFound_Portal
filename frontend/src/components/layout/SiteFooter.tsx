@@ -255,13 +255,13 @@ function SiteFooter() {
                 },
                 { 
                   icon: Linkedin, 
-                  href: "https://linkedin.com", 
+                  href: "https://www.linkedin.com/in/babul-yadav1211/", 
                   color: "hover:text-blue-500",
                   bgColor: "bg-white hover:bg-blue-500/20"
                 },
                 { 
                   icon: Github, 
-                  href: "https://github.com", 
+                  href: "https://github.com/babulydv1211", 
                   color: "hover:text-gray-300",
                   bgColor: "bg-white hover:bg-gray-500/20"
                 },

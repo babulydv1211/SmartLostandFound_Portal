@@ -427,16 +427,16 @@ function FoundItemForm({ onSuccess }: FoundItemFormProps) {
               <Upload className="text-blue-400" size={24} />
               <h3 className="font-display text-2xl font-bold text-white">Report Found Item</h3>
             </motion.div>
-            <p className="text-lg text-gray-300 max-w-md">
+            <p className="text-lg text-gray-300 max-w-md py-4">
               Help reunite someone with their belongings by sharing what you found.
             </p>
           </div>
-          <motion.span 
+          {/* <motion.span 
             whileHover={{ scale: 1.05 }}
-            className="rounded-full bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/40 px-4 py-2 text-sm font-semibold text-blue-300 shadow-lg"
+            className="rounded-full bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/40 px-2 py-2 text-sm font-semibold text-blue-300 shadow-lg"
           >
             🎯 Auto-match Enabled
-          </motion.span>
+          </motion.span> */}
         </div>
         
         {/* Form Fields */}

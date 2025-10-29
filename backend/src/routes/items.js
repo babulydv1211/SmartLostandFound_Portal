@@ -4,6 +4,8 @@ import { authGuard } from "../middleware/auth.js"
 import { callMatchService } from "../services/aiClient.js"
 import { sendMatchEmail } from "../services/mailer.js"
 
+import Match from "../models/Match.js"
+
 const router = Router()
 
 router.get("/items", authGuard, async (_req, res, next) => {
@@ -63,6 +65,35 @@ async function handleMatch(record) {
     if (score >= 80 && counterpart) {
       await Item.findByIdAndUpdate(record._id, { matchConfidence: score })
       await Item.findByIdAndUpdate(counterpart._id, { matchConfidence: score })
+
+      //some change
+
+     // Create a Match document if it doesn't exist
+  const existingMatch = await Match.findOne({
+    $or: [
+      { lostItem: record._id, foundItem: counterpart._id },
+      { lostItem: counterpart._id, foundItem: record._id }
+    ]
+  })
+  if (!existingMatch) {
+    if (record.type === "lost") {
+      await Match.create({
+        lostItem: record._id,
+        foundItem: counterpart._id,
+        confidence: score,
+      })
+    } else {
+      await Match.create({
+        lostItem: counterpart._id,
+        foundItem: record._id,
+        confidence: score,
+      })
+    }
+  }
+
+ //some change yha tak
+
+
       await sendMatchEmail({
         score,
         lostItem: record.type === "lost" ? record : counterpart,
