@@ -16,8 +16,8 @@ const app = express()
 
 // Define allowed origins
 const allowedOrigins = [
-  "http://localhost:5173",  // Main frontend
-  "http://localhost:3001",  // Admin frontend
+  "https://smartlostandfoundportal.onrender.com",  // Main frontend
+  "https://smartlostandfoundportal-admin.onrender.com",  // Admin frontend
 ]
 
 // CORS configuration
