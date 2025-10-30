@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: import.meta.env.VITE_BACKEND_URL ?? 'http://localhost:4000',
+    baseURL: import.meta.env.VITE_BACKEND_URL ?? 'https://smartlostandfound-backend.onrender.com',
 });
 
 // Add a request interceptor to attach the token
