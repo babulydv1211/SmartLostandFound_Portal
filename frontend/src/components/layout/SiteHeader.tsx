@@ -9,7 +9,7 @@ import { useAuth } from "../../providers/AuthProvider"
 
 const navLinks = [
   { to: "/", label: "Home", icon: Home },
-  { to: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
+  { to: "/dashboard", label: "Lost&Found", icon: LayoutDashboard },
   { to: "/about", label: "About", icon: Info },
   { to: "/contact", label: "Contact", icon: Contact },
 ]
