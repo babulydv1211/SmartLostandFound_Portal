@@ -1,7 +1,7 @@
 import axios from "axios"
 import Item from "../models/Item.js"
 
-const AIML_SERVICE_URL = process.env.AIML_SERVICE_URL ?? "http://localhost:8000"
+const AIML_SERVICE_URL = process.env.AIML_SERVICE_URL ?? "https://babul1211-aiml-service.hf.space"
 
 export async function callMatchService(record) {
   const counterpartType = record.type === "lost" ? "found" : "lost"
