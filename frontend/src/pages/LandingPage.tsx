@@ -322,7 +322,7 @@ function LandingPage() {
                           }}
                           transition={{ duration: 2, repeat: Infinity }}
                         >
-                          87% Confidence
+                          85% Confidence
                         </motion.h3>
                       </div>
                       <motion.div 
